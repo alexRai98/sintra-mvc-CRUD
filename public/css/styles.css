@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+input,
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: inherit;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+.app {
+  background-color: #f7fafc;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.task-container {
+  max-width: 300px;
+  margin: auto;
+}
+
+.task-form {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.task-form__text {
+  border-radius: 4px;
+  padding: 12px;
+  border: none;
+  background-color: white;
+  width: 100%;
+}
+
+.button {
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  font-size: 0.875rem;
+  padding: 8px 12px;
+}
+
+.button--primary {
+  color: white;
+  background-color: #4fd1c5;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: white;
+  margin-bottom: 12px;
+}
+
+.task-item__image {
+  margin-right: 12px;
+}
+
+.task-item__delete {
+  color: red;
+  margin-left: auto;
+  justify-self: right;
+}
+
+.tasks-empty {
+  text-align: center;
+  color: #718096;
+  font-size: 1.125rem;
+}
