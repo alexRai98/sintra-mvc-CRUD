@@ -13,6 +13,7 @@ button {
   -webkit-appearance: none;
   font-size: inherit;
   border: none;
+  background-color: #ffffff;
 }
 
 button {
@@ -83,13 +84,18 @@ button {
 }
 
 .task-item__delete {
-  color: red;
   margin-left: auto;
   justify-self: right;
+}
+.task-item__delete button{
+  color: red;
 }
 
 .tasks-empty {
   text-align: center;
   color: #718096;
   font-size: 1.125rem;
+}
+.task-item__state-form{
+  display: flex;
 }

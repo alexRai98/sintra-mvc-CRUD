@@ -1,46 +1,9 @@
-<!doctype html>
+<h1 class="title">Taskdo</h1>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<div class="task-container">
+  <%= erb :_task_form %>
 
-  <title>Taskdo</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<main>
-  <div class="app">
-    <h1 class="title">Taskdo</h1>
-
-    <div class="task-container">
-      <form class="task-form" method="post">
-        <div class="task"></div>
-        <input type="text" class="task-form__text" placeholder="Write a todo">
-        <button type="submit" class="task-form__button button button--primary">Submit</button>
-      </form>
-
-      <ul class="task-list">
-        <li class="task-item">
-          <img class="task-item__image" src="/icons/checkbox-blank.svg" alt="uncheck todo">
-          <span>Walk Bonnie</span>
-          <button class="task-item__delete">X</button>
-        </li>
-        <li class="task-item">
-          <img class="task-item__image" src="/icons/checkbox-checked.svg" alt="uncheck todo">
-          <span>Eat</span>
-          <button class="task-item__delete">X</button>
-        </li>
-        <li class="task-item">
-          <img class="task-item__image" src="/icons/checkbox-checked.svg" alt="check todo">
-          <span>Don't go out</span>
-          <button class="task-item__delete">X</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</main>
-</body>
-</html>
+  <ul class="task-list">
+    <%= erb :_task_list%>
+  </ul>
+</div>

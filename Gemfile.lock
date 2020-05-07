@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.17.1)
-    lazyrecord (0.0.1)
+    lazyrecord (0.0.2)
     multi_json (1.14.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -28,9 +28,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  lazyrecord (~> 0.0.1)
+  lazyrecord (~> 0.0.2)
   sinatra (~> 2.0)
   sinatra-contrib (~> 2.0)
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
