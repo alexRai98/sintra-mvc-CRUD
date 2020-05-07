@@ -1,0 +1,22 @@
+<% @task.each do |task|%>
+    <li class="task-item">
+        <form class="task-item__state-form" action="<%=task_complete_url(task)%>" method="post">
+            <button type="submit">
+                <%if task.stade%>
+                    <img class="task-item__image" src="/icons/checkbox-checked.svg" alt="uncheck todo">
+                <%else%>
+                    <img class="task-item__image" src="/icons/checkbox-blank.svg" alt="uncheck todo">
+                <%end%>
+            </button>
+        </form>
+        <span><%= task.text%> </span>
+        <form class="task-item__delete" action="<%=task_delete(task)%> " method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit">X</button>
+        </form>
+    </li>
+<%end%>
+<%if @task.empty?%>
+    <p class="tasks-empty">Add task!</p>
+<%end%>
+
